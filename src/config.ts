@@ -32,6 +32,53 @@ Do NOT use for email validation -- use email_verify_address instead. Do NOT use 
         },
         required: ["to", "subject", "body"],
       },
+      outputSchema: {
+          "type": "object",
+          "properties": {
+            "messageId": {
+              "type": "string",
+              "description": "Email message ID"
+            },
+            "status": {
+              "type": "string",
+              "description": "Send status (sent)"
+            },
+            "mode": {
+              "type": "string",
+              "description": "Send mode (live or mock)"
+            },
+            "to": {
+              "type": "string",
+              "description": "Recipient email"
+            },
+            "from": {
+              "type": "string",
+              "description": "Sender email"
+            },
+            "subject": {
+              "type": "string",
+              "description": "Email subject"
+            },
+            "bodyLength": {
+              "type": "number",
+              "description": "Body content length"
+            },
+            "contentType": {
+              "type": "string",
+              "description": "Content type (html or text)"
+            },
+            "timestamp": {
+              "type": "string",
+              "description": "ISO 8601 timestamp"
+            }
+          },
+          "required": [
+            "messageId",
+            "status",
+            "to",
+            "subject"
+          ]
+        },
     },
   ],
 };
