@@ -37,7 +37,7 @@ Any x402-aware client ([`@x402/fetch`](https://www.npmjs.com/package/@x402/fetch
 
 | Tool | Method | Path | Price | Description |
 |---|---|---|---|---|
-| `email_send_message` | POST | `/api/send` | $0.003 | Send an email message |
+| `email_send_message` | POST | `/api/send` | $0.008 | Send an email message |
 
 ### `email_send_message`
 
