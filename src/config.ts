@@ -9,7 +9,7 @@ export const API_CONFIG: ApiConfig = {
     {
       method: "POST",
       path: "/api/send",
-      price: "$0.003",
+      price: "$0.008",
       description: "Send an email message",
       toolName: "email_send_message",
       toolDescription: `Use this when you need to send an email to one or more recipients. Returns delivery confirmation in JSON.
